@@ -31,18 +31,23 @@ nav li a {
     width: 100%;
 }
 
+button {
+    color: silver;
+}
+
 
 
 /* Styles for herader */
 header {
     background-color: #4462;
     background: linear-gradient(#4466 90%, darkgray);
-    height: 4rem;
-    line-height: 4rem;
+    height: 5rem;
+    line-height: 5rem;
 }
 
 .logo {
     font-family: cursive;
+    font-size: 2rem;
     font-style: italic;
     font-weight: 700;
 }
@@ -52,3 +57,16 @@ header {
     justify-content: space-between;
 }
 
+.nav-items {
+    display: none;
+}
+
+@media (min-width: 400px) {
+    .nav-items {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+}
