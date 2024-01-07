@@ -41,13 +41,13 @@ button {
 header {
     background-color: #4462;
     background: linear-gradient(#4466 90%, darkgray);
-    height: 5rem;
-    line-height: 5rem;
+    height: 5.4rem;
+    line-height: 5.4rem;
 }
 
 .logo {
     font-family: cursive;
-    font-size: 2rem;
+    font-size: 1.5em;
     font-style: italic;
     font-weight: 700;
 }
@@ -61,12 +61,20 @@ header {
     display: none;
 }
 
+.collapse, .nav-toggle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    text-align: left;
+}
+
 @media (min-width: 400px) {
     .nav-items {
         display: flex;
     }
 
-    .nav-toggle {
+    .nav-toggle-btn {
         display: none;
     }
 }
