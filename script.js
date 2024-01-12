@@ -1,11 +1,13 @@
 // Main nav toggle button
-let menuToggle = document.querySelector(".nav-toggle");
+const btnToggle = document.querySelector(".btn-toggle");
 
-menuToggle.onclick = () => {
-    let collapse = true;
-    if (collapse === false) {
-        menuToggle.removeAttribute('class', 'collapse')
+function navToggler() {
+    const navItems = document.querySelector(".nav-items");
+    if (navItems.classList.contains("collapse")) {
+        navItems.classList.remove("collapse");
     } else {
-        menuToggle.setAttribute('class', 'collapse')
+        navItems.classList.add("collapse");
     }
 }
+
+btnToggle.addEventListener("click", navToggler);

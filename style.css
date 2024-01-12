@@ -31,7 +31,7 @@ nav li a {
     width: 100%;
 }
 
-button {
+button, button:hover, button:focus {
     color: silver;
 }
 
@@ -58,10 +58,6 @@ header {
 }
 
 .nav-items {
-    display: none;
-}
-
-.collapse, .nav-toggle {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -69,12 +65,17 @@ header {
     text-align: left;
 }
 
+.collapse {
+    display: none;
+}
+
 @media (min-width: 400px) {
     .nav-items {
         display: flex;
     }
 
-    .nav-toggle-btn {
+    .btn-toggle {
         display: none;
     }
+
 }
