@@ -5,8 +5,10 @@ function navToggler() {
     const navItems = document.querySelector(".nav-items");
     if (navItems.classList.contains("collapse")) {
         navItems.classList.remove("collapse");
+        btnToggle.innerHTML = "CLOSE";
     } else {
         navItems.classList.add("collapse");
+        btnToggle.innerHTML = "MENU";
     }
 }
 

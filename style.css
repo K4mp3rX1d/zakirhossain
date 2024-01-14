@@ -69,7 +69,28 @@ header {
     display: none;
 }
 
-@media (min-width: 400px) {
+
+/* Styles for Hero Section */
+.hero {
+    height: 40vh;
+    width: 100vw;
+    color: silver;
+    background-color: #4462;
+    background: linear-gradient(to bottom left,
+    #02309457,
+    #429b8f65);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 200;
+}
+
+
+
+/* Media Queries */
+@media (min-width: 550px) {
     .nav-items {
         display: flex;
         flex-direction: row;
@@ -79,12 +100,9 @@ header {
         display: none;
     }
 
-}
-
-@media (min-width: 540px) {
-    .nav-items li {
-        padding-left: 1em;
-        padding-right: 1em;
+    .hero {
+        font-size: 3.2rem;
+        height: 85vh;
     }
 }
 
