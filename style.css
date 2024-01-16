@@ -1,3 +1,17 @@
+/* Index
+    -CSS Reset
+    -CSS Framework (skeleton)
+    -Base Styles
+    -Common Layout Styles
+    -Section Specific Styles:
+        -Header
+        -About
+        -Projects
+        -Contacts
+    -Media Queries
+ */
+
+
 /* CSS Reset */
 @import url(normalize.css);
 
@@ -35,6 +49,55 @@ button, button:hover, button:focus {
     color: silver;
 }
 
+figure {
+    /* margin-left: 0;
+    margin-right: 0; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+/* Layout Specific Styles */
+.section-header {
+    letter-spacing: 2px;
+    text-align: center;
+    width: 15rem;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    padding-bottom: .4rem;
+    border-bottom: .4rem solid;
+}
+
 
 
 /* Styles for herader */
@@ -45,7 +108,7 @@ header {
     line-height: 5.4rem;
 }
 
-.logo {
+.brand {
     font-family: cursive;
     font-size: 1.5em;
     font-style: italic;
@@ -88,6 +151,21 @@ header {
 }
 
 
+/* Styles for About Section */
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skillset ul li {
+    list-style-type: none;
+}
+
+
 
 /* Media Queries */
 @media (min-width: 550px) {
@@ -102,7 +180,7 @@ header {
 
     .hero {
         font-size: 3.2rem;
-        height: 85vh;
+        height: 80vh;
     }
 }
 
