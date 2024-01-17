@@ -1,15 +1,19 @@
 // Main nav toggle button
 const btnToggle = document.querySelector(".btn-toggle");
+const navItems = document.querySelector(".nav-items");
 
-function navToggler() {
-    const navItems = document.querySelector(".nav-items");
-    if (navItems.classList.contains("collapse")) {
-        navItems.classList.remove("collapse");
-        btnToggle.innerHTML = "CLOSE";
+function toggler(targetElememnt, keyClass, innerElement, innerElementAlt) {
+    // Generic toggler function, works by adding and removing class(keyClass) to the specified elemnent (targetElement) and altering innerHTML (innerElemnt, innerElemntAlt) of the the element on which it is being bined with.
+
+    if (targetElememnt.classList.contains(keyClass)) {
+        targetElememnt.classList.remove(keyClass);
+        // console.log(this)
+        this.innerHTML = innerElementAlt;
     } else {
-        navItems.classList.add("collapse");
-        btnToggle.innerHTML = "MENU";
+        targetElememnt.classList.add(keyClass);
+        // console.log(this)
+        this.innerHTML = innerElement;
     }
 }
 
-btnToggle.addEventListener("click", navToggler);
+btnToggle.addEventListener("click", () => toggler(navItems, "collapse", "MENU", "CLOSE"));
