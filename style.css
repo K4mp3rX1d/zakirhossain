@@ -49,11 +49,6 @@ button, button:hover, button:focus {
     color: silver;
 }
 
-figure {
-    /* margin-left: 0;
-    margin-right: 0; */
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     text-transform: uppercase;
@@ -126,6 +121,8 @@ header {
     flex-direction: column;
     justify-content: baseline;
     text-align: left;
+    background-color: rgb(45, 45, 62);
+    z-index: 1;
 }
 
 .collapse {
@@ -181,6 +178,10 @@ header {
     .hero {
         font-size: 3.2rem;
         height: 80vh;
+    }
+    
+    .nav-items {
+        background: transparent;
     }
 }
 
