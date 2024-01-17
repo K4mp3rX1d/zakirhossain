@@ -1,14 +1,14 @@
 /* Index
-    -CSS Reset
-    -CSS Framework (skeleton)
-    -Base Styles
-    -Common Layout Styles
-    -Section Specific Styles:
-        -Header
-        -About
-        -Projects
-        -Contacts
-    -Media Queries
+    - CSS Reset
+    - CSS Framework (skeleton)
+    - Base Styles
+    - Common Layout Styles
+    - Section Specific Styles:
+        - Header
+        - About
+        - Projects
+        - Contacts
+    - Media Queries
  */
 
 
@@ -65,23 +65,31 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 h4 {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
 }
 
 h5 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 h6 {
     font-size: 1.2rem;
 }
 
+progress {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
 /* Layout Specific Styles */
-.section-header {
+.section-header, .sub-section-header {
     letter-spacing: 2px;
     text-align: center;
     width: 15rem;
@@ -93,6 +101,17 @@ h6 {
     border-bottom: .4rem solid;
 }
 
+.sub-section-header {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-bottom: .4rem;
+    border-bottom: .2rem solid;
+}
+
+
+.standout {
+    background-color:#429b8f65;
+}
 
 
 /* Styles for herader */
@@ -158,8 +177,9 @@ header {
     text-align: center;
 }
 
-.skillset ul li {
-    list-style-type: none;
+.skills {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
