@@ -1,7 +1,4 @@
-// Main nav toggle button
-const btnToggle = document.querySelector(".btn-toggle");
-const navItems = document.querySelector(".nav-items");
-
+// Generic Toggle function, primarily used for Main Nav toggle button.
 function toggler(targetElememnt, keyClass, innerElement, innerElementAlt) {
     // Generic toggler function, works by adding and removing class(keyClass) to the specified elemnent (targetElement) and altering innerHTML (innerElemnt, innerElemntAlt) of the the element on which it is being bined with.
 
@@ -15,5 +12,12 @@ function toggler(targetElememnt, keyClass, innerElement, innerElementAlt) {
         this.innerHTML = innerElement;
     }
 }
+
+
+
+// Main nav toggler
+const btnToggle = document.querySelector(".btn-toggle");
+const navItems = document.querySelector(".nav-items");
+
 
 btnToggle.addEventListener("click", () => toggler(navItems, "collapse", "MENU", "CLOSE"));
