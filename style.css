@@ -151,12 +151,12 @@ header {
     font-weight: 700;
 }
 
-header .navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
 }
 
-header .nav-items {
+.nav-items {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -224,17 +224,20 @@ footer {
     padding: 3rem 0;
 }
 
-footer .footer-nav {
+.footer-nav .nav-items {
     display: flex;
+    flex-direction: row;
     width: 100%;
     height: auto;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    background-color: transparent;
+    font-size: .85em;
 
 }
 
-footer .copyright {
+.copyright {
     display: inline-block;
     width: 100%;
     text-align: center;
