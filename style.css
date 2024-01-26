@@ -1,4 +1,4 @@
-/* Index
+/* Table of Contents:
     - CSS Reset
     - CSS Framework (skeleton)
     - Base Styles
@@ -166,6 +166,10 @@ header {
     z-index: 1;
 }
 
+.nav-items a {
+    text-decoration: none;
+}
+
 .collapse {
     display: none;
 }
@@ -234,7 +238,14 @@ footer {
     margin: 0 auto;
     background-color: transparent;
     font-size: .85em;
+}
 
+.footer-nav .nav-items li {
+    border-right: 1px solid silver;
+}
+
+.footer-nav .nav-items li:last-child {
+    border: none;
 }
 
 .copyright {
